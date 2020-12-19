@@ -20,16 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ee91fe-6f6f-4265-939b-e8bdaeaa650d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/prod.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608396238698</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated operating files">
+      <created>1608409134050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608409134050</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,20 +113,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added files" />
     <MESSAGE value="fixed run" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed run" />
+    <MESSAGE value="updated operating files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated operating files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1224" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608408152930">
+    <state x="-1224" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608411416501">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1224" y="346" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608408152930" />
+    <state x="-1224" y="346" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608411416501" />
     <state x="469" y="150" key="SettingsEditor" timestamp="1608393393265">
       <screen x="0" y="25" width="1920" height="979" />
     </state>
     <state x="469" y="150" key="SettingsEditor/0.25.1920.979/-1920.25.1920.1055@0.25.1920.979" timestamp="1608393393265" />
-    <state x="560" y="238" key="Vcs.Push.Dialog.v2" timestamp="1608396241425">
-      <screen x="0" y="25" width="1920" height="979" />
+    <state x="-1360" y="235" key="Vcs.Push.Dialog.v2" timestamp="1608409136822">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="-1360" y="235" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608409136822" />
     <state x="560" y="238" key="Vcs.Push.Dialog.v2/0.25.1920.979/-1920.25.1920.1055@0.25.1920.979" timestamp="1608396241425" />
   </component>
 </project>
