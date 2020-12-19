@@ -2,6 +2,7 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
+    <p>'Accounts available:'</p>
   </div>
 </template>
 
