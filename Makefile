@@ -1,4 +1,7 @@
-frontend.build:
+frontend.install:
+	npm install
+
+frontend.build: frontend.install
 	npm run build
 
 #frontend.collect_static:
