@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ee91fe-6f6f-4265-939b-e8bdaeaa650d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608412115338</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated wsgi to working until solved">
+      <created>1608415157251</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608415157252</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +122,8 @@
     <MESSAGE value="fixed run" />
     <MESSAGE value="updated operating files" />
     <MESSAGE value="updated operating files v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated operating files v2" />
+    <MESSAGE value="updated wsgi to working until solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated wsgi to working until solved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1224" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608411416501">
@@ -127,10 +134,10 @@
       <screen x="0" y="25" width="1920" height="979" />
     </state>
     <state x="469" y="150" key="SettingsEditor/0.25.1920.979/-1920.25.1920.1055@0.25.1920.979" timestamp="1608393393265" />
-    <state x="-1360" y="235" key="Vcs.Push.Dialog.v2" timestamp="1608412117126">
+    <state x="-1360" y="235" key="Vcs.Push.Dialog.v2" timestamp="1608415159148">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1360" y="235" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608412117126" />
+    <state x="-1360" y="235" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608415159148" />
     <state x="560" y="238" key="Vcs.Push.Dialog.v2/0.25.1920.979/-1920.25.1920.1055@0.25.1920.979" timestamp="1608396241425" />
     <state x="-1712" y="123" width="1720" height="880" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1608412798658">
       <screen x="-1920" y="0" width="1920" height="1080" />
