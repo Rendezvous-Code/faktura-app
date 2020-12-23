@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ee91fe-6f6f-4265-939b-e8bdaeaa650d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608393117970</updated>
-      <workItem from="1608420450785" duration="1452000" />
+      <workItem from="1608420450785" duration="1790000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1608393461577</created>
@@ -141,7 +139,8 @@
     <MESSAGE value="updated operating files v2" />
     <MESSAGE value="updated wsgi to working until solved" />
     <MESSAGE value="package updated removed chrome and tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="package updated removed chrome and tests" />
+    <MESSAGE value="added axios for vue js requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added axios for vue js requests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1224" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608411416501">
@@ -152,14 +151,18 @@
       <screen x="0" y="25" width="1920" height="979" />
     </state>
     <state x="469" y="150" key="SettingsEditor/0.25.1920.979/-1920.25.1920.1055@0.25.1920.979" timestamp="1608393393265" />
-    <state x="-1360" y="235" key="Vcs.Push.Dialog.v2" timestamp="1608415626199">
+    <state x="-1360" y="235" key="Vcs.Push.Dialog.v2" timestamp="1608422294127">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1360" y="235" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608415626199" />
+    <state x="-1360" y="235" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608422294127" />
     <state x="560" y="238" key="Vcs.Push.Dialog.v2/0.25.1920.979/-1920.25.1920.1055@0.25.1920.979" timestamp="1608396241425" />
     <state x="-1712" y="123" width="1720" height="880" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1608412798658">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1712" y="123" width="1720" height="880" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608412798658" />
+    <state x="-1262" y="278" width="604" height="490" key="find.popup" timestamp="1608556334001">
+      <screen x="-1920" y="25" width="1920" height="979" />
+    </state>
+    <state x="-1262" y="278" width="604" height="490" key="find.popup/0.25.1920.1055/-1920.25.1920.979@-1920.25.1920.979" timestamp="1608556334001" />
   </component>
 </project>

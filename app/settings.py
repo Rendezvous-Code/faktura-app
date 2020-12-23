@@ -21,8 +21,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 's4=jrncv!k&qd%4ruvmb0j*o)4&_@*+^ne8^+1i2(c77u3=l^c'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 SECRET_KEY = os.environ['SECRET_KEY']
@@ -131,6 +129,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = []
 STATIC_URL = '/static/'
 CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+    'https://faktura-front.herokuapp.com/',
+)
 
 try:
     from local_settings import *
