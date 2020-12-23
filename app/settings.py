@@ -130,7 +130,7 @@ STATICFILES_DIRS = []
 STATIC_URL = '/static/'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
-    'https://faktura-front.herokuapp.com/',
+    'https://faktura-front.herokuapp.com',
 )
 
 try:
