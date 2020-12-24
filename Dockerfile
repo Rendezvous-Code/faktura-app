@@ -19,8 +19,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
 
-RUN python manage.py collectstatic --noinput
-
 RUN adduser -D user
 USER user
 
