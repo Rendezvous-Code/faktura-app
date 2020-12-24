@@ -20,45 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ee91fe-6f6f-4265-939b-e8bdaeaa650d" name="Default Changelist" comment="removed old index html">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.flake8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountant/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountant/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountant/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountant/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountant/tests/test_account_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountant/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountant/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/migrations/0002_accountuser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/migrations/0003_entity.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/migrations/0004_bankaaccount.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/migrations/0005_transaction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/tests/test_admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/tests/test_commands.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/tests/test_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/tests/test_user_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608759450743</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="updated proc file">
+      <created>1608763103468</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608763103468</updated>
+    </task>
+    <task id="LOCAL-00012" summary="change to docker">
+      <created>1608763136532</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608763136532</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +187,8 @@
     <MESSAGE value="removed old index html" />
     <MESSAGE value="removed path from corslist url" />
     <MESSAGE value="updated proc file" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated proc file" />
+    <MESSAGE value="change to docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to docker" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1224" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608411416501">
@@ -223,11 +203,11 @@
       <screen x="0" y="25" width="1920" height="979" />
     </state>
     <state x="469" y="150" key="SettingsEditor/0.25.1920.979/-1920.25.1920.1055@0.25.1920.979" timestamp="1608393393265" />
-    <state x="-1360" y="255" key="Vcs.Push.Dialog.v2" timestamp="1608759468429">
+    <state x="-1360" y="255" key="Vcs.Push.Dialog.v2" timestamp="1608763138189">
       <screen x="-1920" y="25" width="1920" height="1055" />
     </state>
     <state x="-1360" y="235" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1608422294127" />
-    <state x="-1360" y="255" key="Vcs.Push.Dialog.v2/0.25.1920.979/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1608759468429" />
+    <state x="-1360" y="255" key="Vcs.Push.Dialog.v2/0.25.1920.979/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1608763138189" />
     <state x="560" y="238" key="Vcs.Push.Dialog.v2/0.25.1920.979/-1920.25.1920.1055@0.25.1920.979" timestamp="1608396241425" />
     <state x="-1712" y="123" width="1720" height="880" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1608412798658">
       <screen x="-1920" y="0" width="1920" height="1080" />
