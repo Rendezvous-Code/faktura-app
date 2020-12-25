@@ -1,11 +1,11 @@
 language: python
 python:
-  - "3.6"
+  - "3.8"
 
 services:
-  - docker
+  - postgresql
 
-before_script: pip install -r requirements.txt && cd app
+before_script: cd app
 
 script:
   - python manage.py test && flake8
