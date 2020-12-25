@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='foo')
 
 DEBUG = int(os.environ.get('DEBUG', default=0))
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'fakturarnd.heroku.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'fakturarnd.herokuapp.com']
 
 
 # Application definition
