@@ -8,4 +8,4 @@ services:
 before_script: pip install -r requirements.txt && cd app
 
 script:
-  - docker-compose run app sh -c "python manage.py test && flake8"
+  - python manage.py test && flake8
