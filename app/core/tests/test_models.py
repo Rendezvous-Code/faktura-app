@@ -1,5 +1,17 @@
 from django.test import TestCase
 from django.contrib.auth import get_user_model
+from core import models
+
+
+def sample_user(user, **params):
+    user = get_user_model()
+    defaults = {
+        'email': 'coca-cola@test.rs',
+        'pass': 'test1234568555',
+    }
+    defaults.update(params)
+
+    return user.objects.create(user, **defaults)
 
 
 class ModelTests(TestCase):
@@ -34,3 +46,12 @@ class ModelTests(TestCase):
 
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
+
+    def test_account_str(self):
+        account = models.Account.objects.create(
+            name='Renedezvous Code',
+            vat='234567891011',
+            business_id='159875321'
+        )
+
+        self.assertEqual(str(account), account.name)

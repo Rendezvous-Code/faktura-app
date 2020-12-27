@@ -3,15 +3,28 @@ from django.contrib.auth import get_user_model
 from django.urls import reverse
 from rest_framework.test import APIClient
 from rest_framework import status
+from core.models import Account, UserProfile
 
 
 CREATE_USER_URL = reverse('user:create')
 TOKEN_URL = reverse('user:token')
 ME_URL = reverse('user:me')
+CREATE_PROFILE_URL = reverse('user:create-profile')
 
 
 def create_user(**params):
     return get_user_model().objects.create_user(**params)
+
+
+def sample_account(**params):
+    defaults = {
+        'name': 'coca-cola',
+        'vat': '1234568555',
+        'business_id': 'kskajajja'
+    }
+    defaults.update(params)
+
+    return Account.objects.create(**defaults)
 
 
 class PublicUserApiTests(TestCase):
@@ -34,6 +47,30 @@ class PublicUserApiTests(TestCase):
         user = get_user_model().objects.get(**res.data)
         self.assertTrue(user.check_password(payload['password']))
         self.assertNotIn('password', res.data)
+
+    def test_create_valid_account_owner(self):
+        """Test creating user with valid payload is successful"""
+        payload = {
+            'email': 'test@rendezvous.rs',
+            'password': 'testpass',
+            'first_name': 'Test name',
+            'last_name': 'Taylor'
+        }
+        res = self.client.post(CREATE_USER_URL, payload)
+        account = sample_account()
+        user = get_user_model().objects.get(**res.data)
+
+        profile_payload = {
+            'user': user.pk,
+            'account': account.pk,
+            'is_account_owner': True,
+            'is_account_admin': True
+        }
+        res = self.client.post(CREATE_PROFILE_URL, profile_payload)
+        print(res.data)
+        self.assertEqual(res.status_code, status.HTTP_201_CREATED)
+        profile = UserProfile.objects.get(**res.data)
+        self.assertEqual(profile.user, user)
 
     def test_user_exists(self):
         """Test creating users that already exists fails"""

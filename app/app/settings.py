@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'core',
     'users',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -127,6 +128,9 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+MIN_NUMBER_OF_ACCOUNT_MEMBERS = 1
+MAX_NUMBER_OF_ACCOUNT_MEMBERS = 1000
 
 CORS_ORIGIN_ALLOW_ALL = False
 
