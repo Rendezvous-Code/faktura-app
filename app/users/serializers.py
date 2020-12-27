@@ -1,6 +1,7 @@
 from django.contrib.auth import get_user_model, authenticate
 from django.utils.translation import ugettext_lazy as _
 from rest_framework import serializers
+from core.models import Account, UserProfile
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -50,3 +51,19 @@ class AuthTokenSerializer(serializers.Serializer):
 
         attrs['user'] = user
         return attrs
+
+
+class UserProfileSerializer(serializers.ModelSerializer):
+    """Serializer for the User Profile object"""
+    user = serializers.PrimaryKeyRelatedField(
+        queryset=get_user_model().objects.all())
+    account = serializers.PrimaryKeyRelatedField(
+        queryset=Account.objects.all())
+
+    class Meta:
+        model = UserProfile
+        fields = ('user', 'account', 'is_account_owner', 'is_account_admin')
+
+    def create(self, validated_data):
+        """create new user profile with encrypted password and return it"""
+        return UserProfile.objects.create(**validated_data)
