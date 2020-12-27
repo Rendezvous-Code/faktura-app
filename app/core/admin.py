@@ -33,7 +33,7 @@ class PermissionGroupAdmin(admin.ModelAdmin):
 class UserProfileAdmin(admin.ModelAdmin):
     form = CustomUserProfileModelAdminForm
     save_on_top = True
-    filter_horizontal = ['permissions', 'group_permisions', "account"]
+    filter_horizontal = ['permissions', 'group_permisions']
     list_display = models.UserProfile.ADMIN_DISPLAY
 
 

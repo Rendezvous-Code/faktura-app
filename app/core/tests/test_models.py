@@ -3,6 +3,17 @@ from django.contrib.auth import get_user_model
 from core import models
 
 
+def sample_user(user, **params):
+    user = get_user_model()
+    defaults = {
+        'email': 'coca-cola@test.rs',
+        'pass': 'test1234568555',
+    }
+    defaults.update(params)
+
+    return user.objects.create(user, **defaults)
+
+
 class ModelTests(TestCase):
 
     def test_create_user_with_email_successful(self):

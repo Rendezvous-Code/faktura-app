@@ -1,7 +1,5 @@
 from django.db import models
 from django.conf import settings
-from django.db.models.signals import post_save
-from django.dispatch import receiver
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, \
                                         PermissionsMixin
 from core.scheme.validators import validate_account_settings
@@ -125,6 +123,7 @@ class Account(models.Model):
         blank=False,
         null=False
     )
+
     settings = models.JSONField(
         help_text='Account settings in JSON format.',
         null=True, blank=True,
@@ -153,7 +152,7 @@ class Account(models.Model):
     def admins(self):
         return UserProfile.objects.filter(
             account=self,
-            group_permisions__name='account-admin',
+            is_account_admin=True,
             user__is_active=True,
         )
 
@@ -164,11 +163,15 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE,
                                 related_name='user_profile')
 
-    account = models.ManyToManyField(
+    account = models.ForeignKey(
         Account,
+        on_delete=models.CASCADE,
         help_text='Account this user belongs to.',
-        related_name="user_accounts"
+        related_name="user_account"
     )
+    is_account_owner = models.BooleanField(default=False)
+    is_account_admin = models.BooleanField(default=False)
+    disabled = models.BooleanField(default=False)
 
     permissions = models.ManyToManyField(
         Permission,
@@ -179,14 +182,10 @@ class UserProfile(models.Model):
         related_name='user_group_permisions',
         blank=True
     )
-
-    ADMIN_DISPLAY = ['user', 'groups', 'accounts']
-
-    def accounts(self):
-        return ", ".join(str(v) for v in self.account.all())
-
-    def all_accounts(self):
-        return self.account.all()
+    ADMIN_FILTER = ['is_account_admin', 'is_account_owner']
+    ADMIN_SEARCH = ['account__name']
+    ADMIN_READONLY = ['user', 'account']
+    ADMIN_DISPLAY = ['user', 'groups', 'account']
 
     def groups(self):
         return ", ".join(str(v) for v in self.group_permisions.all())
@@ -223,32 +222,3 @@ class UserProfile(models.Model):
 
     def _permission_groups_list(self):
         return list(self.group_permisions.all().values_list('name', flat=True))
-
-    @property
-    def is_account_admin(self):
-        return 'account-admin' in self._permission_groups_list()
-
-
-@receiver(post_save, sender=User)
-def create_user_profile(sender, instance, created, raw, **kwargs):
-    """Automatically create the profile when user object is created."""
-    # post_save signal should be disabled when ``raw=True``
-    # (i.e. when loading a test fixture). For details, please see:
-    # https://docs.djangoproject.com/en/1.11/ref/signals/#post-save for details
-    if raw:
-        return
-
-    if created:
-        UserProfile.objects.create(user=instance)
-
-
-@receiver(post_save, sender=User)
-def save_user_profile(sender, instance, raw, **kwargs):
-    """Automatically save the profile when user object is edited."""
-    # post_save signal should be disabled when ``raw=True``
-    # (i.e. when loading a test fixture). For details, please see:
-    # https://docs.djangoproject.com/en/1.11/ref/signals/#post-save for details
-    if raw:
-        return
-
-    instance.user_profile.save()
