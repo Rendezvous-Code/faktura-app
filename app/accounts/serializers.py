@@ -13,4 +13,6 @@ class AccountSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         """create new account return it"""
-        return Account.objects.create(**validated_data)
+        account = Account.objects.create(**validated_data)
+        account.save()
+        return account
