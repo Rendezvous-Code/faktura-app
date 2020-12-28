@@ -67,7 +67,6 @@ class PublicUserApiTests(TestCase):
             'is_account_admin': True
         }
         res = self.client.post(CREATE_PROFILE_URL, profile_payload)
-        print(res.data)
         self.assertEqual(res.status_code, status.HTTP_201_CREATED)
         profile = UserProfile.objects.get(**res.data)
         self.assertEqual(profile.user, user)
@@ -150,6 +149,8 @@ class PrivateUserApiTests(TestCase):
 
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(res.data, {
+            'pk': self.user.pk,
+            'id': self.user.id,
             'first_name': self.user.first_name,
             'email': self.user.email,
             'last_name': self.user.last_name

@@ -8,9 +8,11 @@ class AccountSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Account
-        fields = ('id', 'name', 'vat', 'business_id')
-        read_only_fields = ('id',)
+        fields = ('pk', 'id', 'name', 'vat', 'business_id')
+        read_only_fields = ('id', 'pk')
 
     def create(self, validated_data):
         """create new account return it"""
-        return Account.objects.create(**validated_data)
+        account = Account.objects.create(**validated_data)
+        account.save()
+        return account
