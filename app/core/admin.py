@@ -3,6 +3,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext as _
 from core import models
 from core.forms import CustomUserProfileModelAdminForm
+from bank.models import Clients
 
 
 class UserAdmin(BaseUserAdmin):
@@ -44,3 +45,4 @@ admin.site.register(models.Account,
                     list_display=models.Account.ADMIN_DISPLAY)
 admin.site.register(models.Permission,
                     list_display=models.Permission.ADMIN_DISPLAY)
+admin.site.register(Clients)
