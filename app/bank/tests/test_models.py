@@ -21,9 +21,9 @@ class ModelTests(TestCase):
         acc = sample_account()
         acc.save()
         klient = models.Clients.objects.create(
+            account=acc,
             name='GradinG',
             vat='1234546',
             business_id='m8faas99'
         )
-        klient.account.add(acc.pk)
         self.assertEqual(str(klient), klient.name)

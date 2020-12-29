@@ -41,10 +41,12 @@ class OwnerBankAccount(BaseBankAccount):
 
 
 class Clients(models.Model):
-    account = models.ManyToManyField(
+    account = models.ForeignKey(
         Account,
-        related_name='accounts',
-        blank=False)
+        on_delete=models.CASCADE,
+        help_text='Account this client belongs to.',
+        related_name="account_owner"
+    )
 
     name = models.CharField(
         max_length=128,
@@ -52,14 +54,12 @@ class Clients(models.Model):
     vat = models.CharField(
         max_length=128,
         help_text='VAT number',
-        unique=True,
         blank=False,
         null=False
     )
     business_id = models.CharField(
         max_length=128,
         help_text='Company ID number',
-        unique=True,
         blank=False,
         null=False
     )
